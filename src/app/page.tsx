@@ -1,7 +1,7 @@
 import Header from "@/components/shared/Header";
 import Hero from "@/components/shared/Hero";
 
-export default function Home() {
+function Home() {
   return (
     <main>
       <Header />
@@ -9,3 +9,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default Home;
