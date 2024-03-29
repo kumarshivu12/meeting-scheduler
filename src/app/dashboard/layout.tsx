@@ -9,7 +9,6 @@ function DashboardLayout({ children }: { children: React.ReactNode }) {
       </div>
       <div className="md:ml-64">
         <DashboardHeader />
-        {/* <Toaster /> */}
         {children}
       </div>
     </main>
