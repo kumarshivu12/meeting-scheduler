@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import profile1 from "../../../public/profile1.png";
 import profile2 from "../../../public/profile2.png";
@@ -6,6 +7,7 @@ import profile4 from "../../../public/profile4.png";
 import facebook from "../../../public/facebook.png";
 import google from "../../../public/google.png";
 import { Button } from "@/components/ui/button";
+import { LoginLink } from "@kinde-oss/kinde-auth-nextjs";
 
 function Hero() {
   return (
@@ -47,14 +49,18 @@ function Hero() {
         <div className="flex flex-col gap-4 mt-5">
           <h3 className="text-sm">Sign Up free with Google and Facebook</h3>
           <div className="flex justify-center gap-8">
-            <Button className="p-7 flex gap-4">
-              <Image src={google} alt="google" width={40} height={40} />
-              Sign up with Google
-            </Button>
-            <Button className="p-7 flex gap-4">
-              <Image src={facebook} alt="facebook" width={40} height={40} />
-              Sign up with Facebook
-            </Button>
+            <LoginLink>
+              <Button className="p-7 flex gap-4">
+                <Image src={google} alt="google" width={40} height={40} />
+                Sign up with Google
+              </Button>
+            </LoginLink>
+            <LoginLink>
+              <Button className="p-7 flex gap-4">
+                <Image src={facebook} alt="facebook" width={40} height={40} />
+                Sign up with Facebook
+              </Button>
+            </LoginLink>
           </div>
           <hr />
           <h2>
