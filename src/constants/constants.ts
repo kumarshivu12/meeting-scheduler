@@ -1,11 +1,15 @@
-import { MenuItem, MeetingType, ThemeType } from "@/lib/types";
+import {
+  SideNavItemType,
+  LocationItemType,
+  ThemeColorItemType,
+} from "@/lib/types";
 import zoom from "../../public/zoom.png";
 import meet from "../../public/meet.png";
 import phone from "../../public/phone.png";
 import other from "../../public/other.png";
 import { Briefcase, Calendar, Clock, Settings } from "lucide-react";
 
-export const MENU_ITEMS: MenuItem = [
+export const SIDE_NAV_ITEMS: SideNavItemType = [
   {
     id: 1,
     name: "Meeting Type",
@@ -32,7 +36,7 @@ export const MENU_ITEMS: MenuItem = [
   },
 ];
 
-export const MEETING_TYPES: MeetingType = [
+export const LOCATION_ITEMS: LocationItemType = [
   {
     id: 1,
     name: "Zoom",
@@ -55,7 +59,7 @@ export const MEETING_TYPES: MeetingType = [
   },
 ];
 
-export const THEME_OPTIONS: ThemeType = [
+export const THEME_OPTIONS: ThemeColorItemType = [
   "#4F75FE",
   "#13C38B",
   "#9F3CFE",

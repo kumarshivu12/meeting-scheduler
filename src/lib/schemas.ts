@@ -7,7 +7,7 @@ export const bussinessSchema = z.object({
     .max(50, { message: "Name must be less than 50 characters long" }),
 });
 
-export const meetingTypeSchema = z.object({
+export const meetingSchema = z.object({
   eventName: z
     .string()
     .min(2, { message: "Event Name must be at least 2 characters long" })

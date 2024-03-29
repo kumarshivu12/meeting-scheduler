@@ -4,7 +4,7 @@ import logo from "../../../../public/logo.svg";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
-import { MENU_ITEMS } from "@/constants/constants";
+import { SIDE_NAV_ITEMS } from "@/constants/constants";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
@@ -27,7 +27,7 @@ function SideNavBar() {
         </Button>
       </Link>
       <div className="flex flex-col gap-6 mt-6">
-        {MENU_ITEMS.map((item, index) => (
+        {SIDE_NAV_ITEMS.map((item, index) => (
           <Link href={item.path} key={index}>
             <Button
               variant="ghost"

@@ -1,22 +1,22 @@
 import { StaticImageData } from "next/image";
 import { z } from "zod";
-import { bussinessSchema, meetingTypeSchema } from "./schemas";
+import { bussinessSchema, meetingSchema } from "./schemas";
 
-export type MenuItem = {
+export type SideNavItemType = {
   id: string | number;
   name: string;
   path: string;
   icon: React.ElementType;
 }[];
 
-export type MeetingType = {
+export type LocationItemType = {
   id: string | number;
   name: string;
   icon: StaticImageData;
 }[];
 
-export type ThemeType = string[];
+export type ThemeColorItemType = string[];
 
 export type BussinessType = z.infer<typeof bussinessSchema>;
 
-export type MeetingTypeSchema = z.infer<typeof meetingTypeSchema>;
+export type MeetingType = z.infer<typeof meetingSchema>;
